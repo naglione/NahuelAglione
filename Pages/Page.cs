@@ -12,6 +12,8 @@ namespace PlaywrightTest.Pages
     {
         // elements
         private readonly String userBox = "[data-test=\"username\"]";
+        private readonly String passwordBox = "[data-test=\"password\"]";
+        private readonly String loginBtn = "[data-test=\"login-button\"]";
 
         private readonly IPage _page;
         public LoginPage(IPage page)
@@ -22,10 +24,10 @@ namespace PlaywrightTest.Pages
         public async Task LoginAsync(string username, string password)
         {
             await _page.Locator(userBox).ClickAsync();
-            await _page.Locator("[data-test=\"username\"]").FillAsync(username);
-            await _page.Locator("[data-test=\"password\"]").ClickAsync();
-            await _page.Locator("[data-test=\"password\"]").FillAsync(password);
-            await _page.Locator("[data-test=\"login-button\"]").ClickAsync();
+            await _page.Locator(userBox).FillAsync(username);
+            await _page.Locator(passwordBox).ClickAsync();
+            await _page.Locator(passwordBox).FillAsync(password);
+            await _page.Locator(loginBtn).ClickAsync();
         }
 
         public async Task ValidateCorrectLogin()
