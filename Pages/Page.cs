@@ -11,7 +11,7 @@ namespace PlaywrightTest.Pages
     public class LoginPage
     {
         // elements
-        private readonly String userBox = "[data-test=\"username\"]"; 
+        private readonly String userBox = "[data-test=\"username\"]";
 
         private readonly IPage _page;
         public LoginPage(IPage page)
