@@ -21,6 +21,11 @@ namespace PlaywrightTest.Pages
             _page = page;
         }
 
+        public async Task VisitLoginPage() 
+        {
+            await _page.GotoAsync(url: "https://www.saucedemo.com/");
+        }
+
         public async Task LoginAsync(string username, string password)
         {
             await _page.Locator(userBox).ClickAsync();
@@ -40,7 +45,6 @@ namespace PlaywrightTest.Pages
             var errorMsg = _page.Locator(".error-message-container > h3:nth-child(1)");
             var textContent = await errorMsg.TextContentAsync();
             return textContent;
-
         }
     }
 }

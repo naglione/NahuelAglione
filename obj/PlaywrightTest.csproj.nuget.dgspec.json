@@ -45,10 +45,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "FluentAssert": {
-              "target": "Package",
-              "version": "[1.0.0.11, )"
-            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
@@ -86,6 +82,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[111.4.1, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
             },
             "SpecFlow.NUnit": {
               "target": "Package",
