@@ -45,6 +45,7 @@
 
   <ItemGroup>
     <Folder Include="Drivers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>

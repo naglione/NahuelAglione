@@ -9,14 +9,21 @@ using System.Text;
 using System.Net.Mime;
 using SpecFlow.Internal.Json;
 using System.Net.Http.Json;
+using PlaywrightTest.Services;
+using Moq;
+using TechTalk.SpecFlow.CommonModels;
+using System.Security.Policy;
+using System.Net.Http;
 
 namespace PlaywrightTest.Steps
 {
     [Binding]
     public class ApiTestingPOST
     {
-        public HttpResponseMessage _response;
-        public HttpResponseMessage _responseGET;
+        private HttpResponseMessage _response;
+        private HttpResponseMessage _responseGET;
+        private Booking _booking;
+        private Booking _mockBooking;
 
         [When(@"Call the Api")]
         public async Task WhenCallTheApi()
@@ -61,17 +68,28 @@ namespace PlaywrightTest.Steps
             _responseGET.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
-        [When(@"Step")]
-        public void WhenStep()
+        [Given(@"Arrange")]
+        public async Task GivenArrange()
         {
-
+            var dates = new Bookingdates { checkin = "2018-01-01", checkout = "2019-01-01" };
+            _mockBooking = new Booking { firstname = "nombre", lastname = "apellido", totalprice = 10, depositpaid = false, bookingdates = dates, additionalneeds = "test" };
+            var mockApiServices = new Mock<ApiServices>();
+            mockApiServices.Setup(client => client.GetBookingAsync(65, "https://restful-booker.herokuapp.com/booking/")).ReturnsAsync(_mockBooking);
         }
 
-        [Then(@"Step")]
-        public void ThenStep()
+        [When(@"Act")]
+        public async Task WhenAct()
         {
-
+            var httpClient = new HttpClient();
+            var ApiServices = new ApiServices(httpClient);
+            _booking = await ApiServices.GetBookingAsync(65, "https://restful-booker.herokuapp.com/booking/");
         }
 
+        [Then(@"Assert")]
+        public async Task ThenAssert()
+        {
+            _booking.Should().NotBeEquivalentTo(_mockBooking, option => option.Excluding(a => a.bookingdates));
+            _mockBooking.firstname.Should().BeEquivalentTo("nombre");
+        }
     }
 }

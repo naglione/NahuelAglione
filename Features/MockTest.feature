@@ -2,5 +2,6 @@
 
 @moq
 Scenario: Mock Test
-	When Step
-	Then Step
+	Given Arrange
+	When Act
+	Then Assert

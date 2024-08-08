@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Http.Json;
 
 namespace PlaywrightTest.Services
 {
-    internal class ApiServices
+    public class ApiServices : IApiService
     {
-        
-
-        public string GetSomething()
+        private readonly HttpClient _httpClient;
+        public ApiServices(HttpClient httpClient)
         {
-            return "Hola";
+            _httpClient = httpClient;
+        }
+        public virtual async Task<Booking> GetBookingAsync(int bookingId, string url)
+        {
+            _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
+            var requestUrl = $"{url}{bookingId}";
+            return await _httpClient.GetFromJsonAsync<Booking>(requestUrl);
         }
     }
 }
