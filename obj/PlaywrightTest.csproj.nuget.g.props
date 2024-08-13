@@ -7,12 +7,13 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\n.aglione\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\n.aglione\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props" Condition="Exists('$(NuGetPackageRoot)specflow.tools.msbuild.generation\3.9.74\build\SpecFlow.Tools.MsBuild.Generation.props')" />
     <Import Project="$(NuGetPackageRoot)nunit\4.1.0\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\4.1.0\build\NUnit.props')" />
     <Import Project="$(NuGetPackageRoot)specflow.nunit\3.9.74\build\SpecFlow.NUnit.props" Condition="Exists('$(NuGetPackageRoot)specflow.nunit\3.9.74\build\SpecFlow.NUnit.props')" />
@@ -22,6 +23,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.10.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.10.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\n.aglione\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\n.aglione\.nuget\packages\bodi\1.5.0</PkgBoDi>
     <PkgNUnit_Extension_VSProjectLoader Condition=" '$(PkgNUnit_Extension_VSProjectLoader)' == '' ">C:\Users\n.aglione\.nuget\packages\nunit.extension.vsprojectloader\3.8.0</PkgNUnit_Extension_VSProjectLoader>
     <PkgNUnit_Extension_TeamCityEventListener Condition=" '$(PkgNUnit_Extension_TeamCityEventListener)' == '' ">C:\Users\n.aglione\.nuget\packages\nunit.extension.teamcityeventlistener\1.0.7</PkgNUnit_Extension_TeamCityEventListener>
