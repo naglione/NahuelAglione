@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unit Test Results</title>
+</head>
+
+<body>
+    <h1>Test Results</h1>
+    <p class="summary">
+        <span>Total:</span>&nbsp; <span class="total">1</span>
+        <span>Passed:</span>&nbsp; <span class="passed">1</span>
+        <span>Failed:</span>&nbsp; <span class="failed">0</span>
+    </p>
+
+
+    <h2>All Results</h2>
+    <table class="all-results" cellspacing="0" cellpadding="0">
+        <tr class="result">
+            <td>
+                <span class="passed">✔</span>
+            </td>
+            <td>Passed</td>
+            <td>DatabaseContainer</td>
+            <td class="duration">64786ms</td>
+        </tr>
+    </table>
+
+    <style>
+        /* global */
+        body {
+            font-family: Calibri, Verdana, Arial, sans-serif;
+            background-color: white;
+            color: black;
+            padding: 0;
+            margin: 5px 25px;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .passed {
+            font-weight: bold;
+            color: green;
+        }
+
+        .failed {
+            font-weight: bold;
+            color: red;
+        }
+
+        .error {
+            color: red;
+        }
+
+        /* summary */
+        .summary {
+            margin-left: 20px;
+            font-size: x-large;
+        }
+
+        /* failed */
+        .failed-results {
+            margin-left: 20px;
+        }
+
+            .failed-results .result {
+                background-color: #e6eff7;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+
+                .failed-results .result .testname {
+                    font-weight: bold;
+                }
+
+        /* all */
+        table.all-results {
+            width: 100%;
+            padding-left: 20px;
+            border-collapse: separate;
+            border-spacing: 0 5px;
+        }
+
+            table.all-results tr.result {
+                background-color: #e6eff7;
+            }
+
+                table.all-results tr.result td {
+                    padding: 5px;
+                }
+
+                    table.all-results tr.result td.duration {
+                        text-align: right;
+                    }
+    </style>
+</body>
+</html>

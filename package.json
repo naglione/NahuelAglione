@@ -1,0 +1,9 @@
+﻿{
+"scripts": {
+    "prueba": "dotnet test --filter TestCategory=db --logger trx",
+    "reporte": "dotnet run trxlog2html -i "TestResults\report1.trx" -o "TestResults\HTMLreport"",
+    "reportGenerator": "reportgenerator "-reports:TestResults\report1.trx" "-targetdir:TestResults\HTMLreport" "-reporttypes:Html"",
+    "trxToHTML": "dotnet test -l --filter TestCategory=db --logger trx",
+    "2ndLine": "trx-to-html"
+  }
+}
