@@ -18,12 +18,14 @@
           "NUnit.Analyzers": "4.2.0",
           "NUnit3TestAdapter": "4.6.0",
           "Newtonsoft.Json": "13.0.3",
+          "RabbitMQ.Client": "6.8.1",
           "RestSharp": "111.4.1",
           "SpecFlow.Assist.Dynamic": "1.4.2",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.NUnit.Runners": "3.9.74",
           "Testcontainers": "3.9.0",
           "Testcontainers.MySql": "3.9.0",
+          "Testcontainers.RabbitMq": "3.9.0",
           "WireMock.Net": "1.5.62",
           "coverlet.collector": "6.0.2"
         },
@@ -1723,6 +1725,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.8.1": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.8.1.0"
+          }
+        }
+      },
       "RamlToOpenApiConverter/0.6.1": {
         "dependencies": {
           "Microsoft.OpenApi.Readers": "1.2.3",
@@ -2205,6 +2219,7 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Memory/4.5.5": {},
       "System.Net.Http/4.3.4": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2548,6 +2563,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Threading.Channels/7.0.0": {},
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2649,6 +2665,17 @@
         },
         "runtime": {
           "lib/net8.0/Testcontainers.MySql.dll": {
+            "assemblyVersion": "3.9.0.0",
+            "fileVersion": "3.9.0.0"
+          }
+        }
+      },
+      "Testcontainers.RabbitMq/3.9.0": {
+        "dependencies": {
+          "Testcontainers": "3.9.0"
+        },
+        "runtime": {
+          "lib/net8.0/Testcontainers.RabbitMq.dll": {
             "assemblyVersion": "3.9.0.0",
             "fileVersion": "3.9.0.0"
           }
@@ -3707,6 +3734,13 @@
       "path": "protobufjsonconverter/0.3.0",
       "hashPath": "protobufjsonconverter.0.3.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
+      "path": "rabbitmq.client/6.8.1",
+      "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
+    },
     "RamlToOpenApiConverter/0.6.1": {
       "type": "package",
       "serviceable": true,
@@ -4155,6 +4189,13 @@
       "path": "system.linq.expressions/4.3.0",
       "hashPath": "system.linq.expressions.4.3.0.nupkg.sha512"
     },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
     "System.Net.Http/4.3.4": {
       "type": "package",
       "serviceable": true,
@@ -4414,6 +4455,13 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Channels/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
+      "path": "system.threading.channels/7.0.0",
+      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
+    },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4476,6 +4524,13 @@
       "sha512": "sha512-aAkfn5+f2vnDttUNa7lkejJUd0H90NKZofvfakbetCisRGOpSd7pt7if+PhJTfv16Z//HU01Fd3Rd10tiEa73g==",
       "path": "testcontainers.mysql/3.9.0",
       "hashPath": "testcontainers.mysql.3.9.0.nupkg.sha512"
+    },
+    "Testcontainers.RabbitMq/3.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c1CVoGd6YzxswW4W0MGUE6BUeA2uj/FZQLH4DgFylKd2tSPJB50LS5CPydQRQgZxsv7/WDTA3jN1UFhs8acSpw==",
+      "path": "testcontainers.rabbitmq/3.9.0",
+      "hashPath": "testcontainers.rabbitmq.3.9.0.nupkg.sha512"
     },
     "TinyMapper/3.0.3": {
       "type": "package",
