@@ -327,6 +327,7 @@ C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\BouncyCastle.Cry
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Docker.DotNet.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Docker.DotNet.X509.dll
+C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\DotPulsar.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Dynamitey.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Fare.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\FluentAssertions.dll
@@ -345,6 +346,7 @@ C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\HandlebarsDotNet
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\HandlebarsDotNet.Helpers.Xeger.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\HandlebarsDotNet.Helpers.XPath.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\HandlebarsDotNet.Helpers.Xslt.dll
+C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\HashDepot.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Humanizer.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\JmesPath.Net.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\JsonConverter.Abstractions.dll
@@ -360,6 +362,7 @@ C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.CodeAn
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
@@ -414,6 +417,7 @@ C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\System.Security.
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Testcontainers.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Testcontainers.MySql.dll
+C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Testcontainers.Pulsar.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\Testcontainers.RabbitMq.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\TinyMapper.dll
 C:\Users\n.aglione\source\repos\PlaywrightTest\bin\Debug\net8.0\WireMock.Net.dll

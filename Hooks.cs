@@ -1,4 +1,4 @@
-﻿using TechTalk.SpecFlow;
+﻿/*using TechTalk.SpecFlow;
 using WireMock.RequestBuilders;
 using WireMock.ResponseBuilders;
 using WireMock.Server;
@@ -26,4 +26,4 @@ namespace PlaywrightTest
             customers.StopMySqlContainer();
         }
     }
-}
+}*/

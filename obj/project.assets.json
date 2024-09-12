@@ -96,6 +96,25 @@
           }
         }
       },
+      "DotPulsar/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "HashDepot": "2.0.3",
+          "Microsoft.Extensions.ObjectPool": "8.0.7",
+          "System.IO.Pipelines": "8.0.0",
+          "protobuf-net": "3.2.30"
+        },
+        "compile": {
+          "lib/net8.0/DotPulsar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DotPulsar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Dynamitey/2.0.9.136": {
         "type": "package",
         "dependencies": {
@@ -347,6 +366,23 @@
         },
         "runtime": {
           "lib/net8.0/HandlebarsDotNet.Helpers.Xslt.dll": {}
+        }
+      },
+      "HashDepot/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.Runtime": "4.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/HashDepot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HashDepot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Humanizer/2.14.1": {
@@ -1257,6 +1293,19 @@
           "buildTransitive/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
+      "Microsoft.Extensions.ObjectPool/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.IdentityModel.Abstractions/6.34.0": {
         "type": "package",
         "compile": {
@@ -1386,7 +1435,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.0": {
+      "Microsoft.NETCore.Targets/1.1.3": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2987,20 +3036,20 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Pipelines/6.0.3": {
+      "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Linq/4.3.0": {
@@ -3307,11 +3356,11 @@
           }
         }
       },
-      "System.Runtime/4.3.0": {
+      "System.Runtime/4.3.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
+          "Microsoft.NETCore.Platforms": "1.1.1",
+          "Microsoft.NETCore.Targets": "1.1.3"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {
@@ -3943,7 +3992,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Testcontainers/3.9.0": {
+      "Testcontainers/3.10.0": {
         "type": "package",
         "dependencies": {
           "Docker.DotNet": "3.125.15",
@@ -3975,6 +4024,22 @@
         },
         "runtime": {
           "lib/net8.0/Testcontainers.MySql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Testcontainers.Pulsar/3.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Testcontainers": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Testcontainers.Pulsar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Testcontainers.Pulsar.dll": {
             "related": ".xml"
           }
         }
@@ -4337,6 +4402,28 @@
         "lib/netstandard2.1/Docker.DotNet.X509.pdb"
       ]
     },
+    "DotPulsar/3.3.2": {
+      "sha512": "Y0cITYoGLynef9b/xDg4mRRnDCbXk6afiw7zAzMPJIF6C2aDP+KUq7Xvb72/b9yHCS9moJCFr+LMozxLdNNE1Q==",
+      "type": "package",
+      "path": "dotpulsar/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageIcon.png",
+        "dotpulsar.3.3.2.nupkg.sha512",
+        "dotpulsar.nuspec",
+        "lib/net6.0/DotPulsar.dll",
+        "lib/net6.0/DotPulsar.xml",
+        "lib/net7.0/DotPulsar.dll",
+        "lib/net7.0/DotPulsar.xml",
+        "lib/net8.0/DotPulsar.dll",
+        "lib/net8.0/DotPulsar.xml",
+        "lib/netstandard2.0/DotPulsar.dll",
+        "lib/netstandard2.0/DotPulsar.xml",
+        "lib/netstandard2.1/DotPulsar.dll",
+        "lib/netstandard2.1/DotPulsar.xml"
+      ]
+    },
     "Dynamitey/2.0.9.136": {
       "sha512": "SzGWOl8nKR4r7WYiyMgJ0n/MuncdtPSyjxe1+znH8KVKOFQAckXFOeqOXgcWSMLHT+ehAYtZHPWjX+GsH7eI4Q==",
       "type": "package",
@@ -4683,6 +4770,20 @@
         "lib/net8.0/HandlebarsDotNet.Helpers.Xslt.dll",
         "lib/netstandard2.0/HandlebarsDotNet.Helpers.Xslt.dll",
         "lib/netstandard2.1/HandlebarsDotNet.Helpers.Xslt.dll"
+      ]
+    },
+    "HashDepot/2.0.3": {
+      "sha512": "K033sUok3i8MhGM/10tX6Bq/7MTWZJxS3eAU1z+zFv6k2+1FV9+gEAuvZYHYYJeB4v8rbkaL9fHzLoHBZOTXDA==",
+      "type": "package",
+      "path": "hashdepot/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "hashdepot.2.0.3.nupkg.sha512",
+        "hashdepot.nuspec",
+        "lib/netstandard2.0/HashDepot.dll",
+        "lib/netstandard2.0/HashDepot.xml"
       ]
     },
     "Humanizer/2.14.1": {
@@ -6534,6 +6635,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.ObjectPool/8.0.7": {
+      "sha512": "2yLweyqmpuuFSRo+I3sLHMxmnAgNcI537kBJiyv49U2ZEqo00jZcG8lrnD8uCiOJp9IklYyTZULtbsXoFVzsjQ==",
+      "type": "package",
+      "path": "microsoft.extensions.objectpool/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net462/Microsoft.Extensions.ObjectPool.xml",
+        "lib/net8.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net8.0/Microsoft.Extensions.ObjectPool.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
+        "microsoft.extensions.objectpool.8.0.7.nupkg.sha512",
+        "microsoft.extensions.objectpool.nuspec"
+      ]
+    },
     "Microsoft.IdentityModel.Abstractions/6.34.0": {
       "sha512": "5nInt1KKSpKQBlhe6gXz4yKxRzRUQa21vCvSIIKKzAI2e1r9PHQOZc7aRzBA8L/JCvBxLbCxelvUqun6qwWPJg==",
       "type": "package",
@@ -6709,17 +6829,17 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+    "Microsoft.NETCore.Targets/1.1.3": {
+      "sha512": "3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
       "type": "package",
-      "path": "microsoft.netcore.targets/1.1.0",
+      "path": "microsoft.netcore.targets/1.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
+        "microsoft.netcore.targets.1.1.3.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
       ]
@@ -10033,27 +10153,31 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Pipelines/6.0.3": {
-      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
-      "path": "system.io.pipelines/6.0.3",
+      "path": "system.io.pipelines/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Pipelines.dll",
-        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
         "lib/net6.0/System.IO.Pipelines.dll",
         "lib/net6.0/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
+        "lib/net7.0/System.IO.Pipelines.dll",
+        "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.6.0.3.nupkg.sha512",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -10985,10 +11109,10 @@
         "system.resources.resourcemanager.nuspec"
       ]
     },
-    "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+    "System.Runtime/4.3.1": {
+      "sha512": "abhfv1dTK6NXOmu4bgHIONxHyEqFjW8HwXPmpY9gmll+ix9UNo4XDcmzJn6oLooftxNssVHdJC1pGT9jkSynQg==",
       "type": "package",
-      "path": "system.runtime/4.3.0",
+      "path": "system.runtime/4.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11073,7 +11197,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.4.3.1.nupkg.sha512",
         "system.runtime.nuspec"
       ]
     },
@@ -12619,10 +12743,10 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Testcontainers/3.9.0": {
-      "sha512": "jrWWOQYpBpPhAtVUgXiI0KLmgKK6/rwNYrCz1hC9MKbERTwVKukOTAagtOcma16xgSCsV0dvyo9pB25pOSx4zQ==",
+    "Testcontainers/3.10.0": {
+      "sha512": "4oFyiUPCOM3s/sKDnIcOJZIn664d/8+fPvODDlfbb0QAfQqHlqjc2kIoFOLAt3oJRZP9/FJtTvcNvp9j7h4UBA==",
       "type": "package",
-      "path": "testcontainers/3.9.0",
+      "path": "testcontainers/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12638,7 +12762,7 @@
         "lib/netstandard2.0/Testcontainers.xml",
         "lib/netstandard2.1/Testcontainers.dll",
         "lib/netstandard2.1/Testcontainers.xml",
-        "testcontainers.3.9.0.nupkg.sha512",
+        "testcontainers.3.10.0.nupkg.sha512",
         "testcontainers.nuspec"
       ]
     },
@@ -12663,6 +12787,25 @@
         "lib/netstandard2.1/Testcontainers.MySql.xml",
         "testcontainers.mysql.3.9.0.nupkg.sha512",
         "testcontainers.mysql.nuspec"
+      ]
+    },
+    "Testcontainers.Pulsar/3.10.0": {
+      "sha512": "+ykW1CXp6pJ8i5rIIYJDTB759qCaLFtLOOzf2hq+xvn84pjrL4lcVxFId17mg4iA/lkMrQ8yxqLvaESNtoBlkw==",
+      "type": "package",
+      "path": "testcontainers.pulsar/3.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "docs/banner.png",
+        "docs/logo.png",
+        "lib/netstandard2.0/Testcontainers.Pulsar.dll",
+        "lib/netstandard2.0/Testcontainers.Pulsar.xml",
+        "lib/netstandard2.1/Testcontainers.Pulsar.dll",
+        "lib/netstandard2.1/Testcontainers.Pulsar.xml",
+        "testcontainers.pulsar.3.10.0.nupkg.sha512",
+        "testcontainers.pulsar.nuspec"
       ]
     },
     "Testcontainers.RabbitMq/3.9.0": {
@@ -12910,6 +13053,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DotPulsar >= 3.3.2",
       "FluentAssertions >= 6.12.0",
       "Microsoft.NET.Test.Sdk >= 17.10.0",
       "Microsoft.Playwright >= 1.45.1",
@@ -12925,8 +13069,9 @@
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.NUnit.Runners >= 3.9.74",
-      "TestContainers >= 3.9.0",
+      "TestContainers >= 3.10.0",
       "Testcontainers.MySql >= 3.9.0",
+      "Testcontainers.Pulsar >= 3.10.0",
       "Testcontainers.RabbitMq >= 3.9.0",
       "WireMock.Net >= 1.5.62",
       "coverlet.collector >= 6.0.2"
@@ -12976,6 +13121,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "DotPulsar": {
+            "target": "Package",
+            "version": "[3.3.2, )"
+          },
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.12.0, )"
@@ -13040,11 +13189,15 @@
           },
           "TestContainers": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[3.10.0, )"
           },
           "Testcontainers.MySql": {
             "target": "Package",
             "version": "[3.9.0, )"
+          },
+          "Testcontainers.Pulsar": {
+            "target": "Package",
+            "version": "[3.10.0, )"
           },
           "Testcontainers.RabbitMq": {
             "target": "Package",
@@ -13080,5 +13233,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'RestSharp' 111.4.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
+      "libraryId": "RestSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

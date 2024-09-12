@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DotPulsar": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
@@ -109,11 +113,15 @@
             },
             "TestContainers": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[3.10.0, )"
             },
             "Testcontainers.MySql": {
               "target": "Package",
               "version": "[3.9.0, )"
+            },
+            "Testcontainers.Pulsar": {
+              "target": "Package",
+              "version": "[3.10.0, )"
             },
             "Testcontainers.RabbitMq": {
               "target": "Package",

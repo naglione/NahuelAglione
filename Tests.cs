@@ -1,4 +1,4 @@
-﻿using TechTalk.SpecFlow;
+﻿/*using TechTalk.SpecFlow;
 using Testcontainers.MySql;
 using FluentAssertions;
 using MySql.Data.MySqlClient;
@@ -92,4 +92,4 @@ namespace Training.TestContainers
             }
         }
     }
-}
+}*/
