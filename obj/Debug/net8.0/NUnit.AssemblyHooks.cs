@@ -3,30 +3,27 @@
 
 using System.CodeDom.Compiler;
 using System.Diagnostics;
-using global::NUnit.Framework;
-using global::TechTalk.SpecFlow;
 using global::System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
-[GeneratedCode("SpecFlow", "3.9.74")]
-[SetUpFixture]
+[GeneratedCode("Reqnroll", "2.1.1")]
+[global::NUnit.Framework.SetUpFixture]
 public class PlaywrightTest_NUnitAssemblyHooks
 {
-    [OneTimeSetUp]
+    [global::NUnit.Framework.OneTimeSetUp]
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public void AssemblyInitialize()
+    public async Task AssemblyInitializeAsync()
     {
         var currentAssembly = typeof(PlaywrightTest_NUnitAssemblyHooks).Assembly;
-
-        TestRunnerManager.OnTestRunStart(currentAssembly);
+        await global::Reqnroll.TestRunnerManager.OnTestRunStartAsync(currentAssembly);
     }
 
-    [OneTimeTearDown]
+    [global::NUnit.Framework.OneTimeTearDown]
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public void AssemblyCleanup()
+    public async ValueTask AssemblyCleanupAsync()
     {
         var currentAssembly = typeof(PlaywrightTest_NUnitAssemblyHooks).Assembly;
-
-        TestRunnerManager.OnTestRunEnd(currentAssembly);
+        await global::Reqnroll.TestRunnerManager.OnTestRunEndAsync(currentAssembly);
     }
 }
 #pragma warning restore

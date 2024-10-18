@@ -95,21 +95,17 @@
               "target": "Package",
               "version": "[6.8.1, )"
             },
+            "Reqnroll": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Reqnroll.NUnit": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[111.4.1, )"
-            },
-            "SpecFlow.Assist.Dynamic": {
-              "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "SpecFlow.NUnit": {
-              "target": "Package",
-              "version": "[3.9.74, )"
-            },
-            "SpecFlow.NUnit.Runners": {
-              "target": "Package",
-              "version": "[3.9.74, )"
             },
             "TestContainers": {
               "target": "Package",
@@ -154,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

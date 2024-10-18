@@ -1,7 +1,7 @@
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using TechTalk.SpecFlow;
+using Reqnroll;
 using FluentAssertions;
 
 namespace PlaywrightTest.Steps

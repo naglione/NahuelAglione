@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace PlaywrightTest.Features
+namespace PlaywrightTest.Features.Parallel
 {
     using Reqnroll;
     using System;
@@ -20,22 +20,22 @@ namespace PlaywrightTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("PulsarMessage")]
-    public partial class PulsarMessageFeature
+    [NUnit.Framework.DescriptionAttribute("Validate Questions with Three Incorrect Answers")]
+    public partial class ValidateQuestionsWithThreeIncorrectAnswersFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "PulsarMessage.feature"
+#line 1 "ValidateIncorrectAnswers.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual async System.Threading.Tasks.Task FeatureSetupAsync()
         {
             testRunner = global::Reqnroll.TestRunnerManager.GetTestRunnerForAssembly();
-            global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "PulsarMessage", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+            global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Parallel", "Validate Questions with Three Incorrect Answers", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
             await testRunner.OnFeatureStartAsync(featureInfo);
         }
         
@@ -75,16 +75,16 @@ namespace PlaywrightTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Produce and consume a simple Message")]
-        [NUnit.Framework.CategoryAttribute("pulsar_test")]
-        public async System.Threading.Tasks.Task ProduceAndConsumeASimpleMessage()
+        [NUnit.Framework.DescriptionAttribute("Validate that all questions have 3 incorrect answers")]
+        [NUnit.Framework.CategoryAttribute("ParallelTests")]
+        public async System.Threading.Tasks.Task ValidateThatAllQuestionsHave3IncorrectAnswers()
         {
             string[] tagsOfScenario = new string[] {
-                    "pulsar_test"};
+                    "ParallelTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Produce and consume a simple Message", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate that all questions have 3 incorrect answers", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
-this.ScenarioInitialize(scenarioInfo);
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -94,10 +94,40 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 5
- await testRunner.WhenAsync("I send a simple \'Pulsar message!\' message", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+    await testRunner.GivenAsync("I make a GET request", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 6
- await testRunner.ThenAsync("I should receive the same message \'Pulsar message!\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+    await testRunner.ThenAsync("I validate that all questions have 3 incorrect answers", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Extract and print the correct answer for a specific question")]
+        [NUnit.Framework.CategoryAttribute("ParallelTests")]
+        public async System.Threading.Tasks.Task ExtractAndPrintTheCorrectAnswerForASpecificQuestion()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "ParallelTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Extract and print the correct answer for a specific question", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 9
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 10
+    await testRunner.GivenAsync("I make a GET request", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 11
+    await testRunner.ThenAsync("I extract and print the correct answer for the question \"Which car manufacturer w" +
+                        "on the 2017 24 Hours of Le Mans?\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

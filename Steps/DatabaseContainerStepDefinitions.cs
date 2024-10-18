@@ -1,6 +1,6 @@
 using FluentAssertions;
 using MySql.Data.MySqlClient;
-using TechTalk.SpecFlow;
+using Reqnroll;
 
 namespace PlaywrightTest.Steps
 {

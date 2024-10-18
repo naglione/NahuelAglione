@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace PlaywrightTest.Features
+namespace PlaywrightTest.Features.Parallel
 {
     using Reqnroll;
     using System;
@@ -20,22 +20,22 @@ namespace PlaywrightTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("PulsarMessage")]
-    public partial class PulsarMessageFeature
+    [NUnit.Framework.DescriptionAttribute("Validate Correct Answer is True")]
+    public partial class ValidateCorrectAnswerIsTrueFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "PulsarMessage.feature"
+#line 1 "ValidateCorrectAnswer.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual async System.Threading.Tasks.Task FeatureSetupAsync()
         {
             testRunner = global::Reqnroll.TestRunnerManager.GetTestRunnerForAssembly();
-            global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "PulsarMessage", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+            global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/Parallel", "Validate Correct Answer is True", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
             await testRunner.OnFeatureStartAsync(featureInfo);
         }
         
@@ -75,14 +75,14 @@ namespace PlaywrightTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Produce and consume a simple Message")]
-        [NUnit.Framework.CategoryAttribute("pulsar_test")]
-        public async System.Threading.Tasks.Task ProduceAndConsumeASimpleMessage()
+        [NUnit.Framework.DescriptionAttribute("Validate existence of correct_answer as true")]
+        [NUnit.Framework.CategoryAttribute("ParallelTests")]
+        public async System.Threading.Tasks.Task ValidateExistenceOfCorrect_AnswerAsTrue()
         {
             string[] tagsOfScenario = new string[] {
-                    "pulsar_test"};
+                    "ParallelTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Produce and consume a simple Message", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validate existence of correct_answer as true", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -94,10 +94,11 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 5
- await testRunner.WhenAsync("I send a simple \'Pulsar message!\' message", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+await testRunner.GivenAsync("Make a GET Request to \"https://opentdb.com/api.php?amount=10&category=9&difficult" +
+                        "y=easy&type=boolean\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 6
- await testRunner.ThenAsync("I should receive the same message \'Pulsar message!\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+await testRunner.ThenAsync("validate that at least one question has correct_answer: True", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
